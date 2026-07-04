@@ -1,6 +1,6 @@
 // Replace with your deployed Cloudflare Worker URL (see worker/ai-proxy.js for setup instructions).
 // The Worker holds the Anthropic API key server-side — never put an API key in this file.
-const AI_PROXY_URL = 'https://YOUR_WORKER_SUBDOMAIN.workers.dev';
+const AI_PROXY_URL = 'https://neuronex-ai-proxy.funsportsyk.workers.dev';
 
 const SYSTEM_PROMPT = `You are the NeuroNex Research Assistant — an AI built by the NeuroNex nonprofit to help patients, families, and caregivers understand Alzheimer's disease.
 
