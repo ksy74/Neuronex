@@ -82,6 +82,62 @@ const entries = [
     plain: "A major international commission reviewing decades of dementia research identified social isolation as one of several modifiable risk factors for dementia. People who maintain regular, meaningful social contact tend to show lower dementia risk than those who become isolated — making relationships a genuine piece of brain health, not just emotional wellbeing.",
     jargon: "Livingston et al., Lancet Commission on dementia prevention, intervention, and care (2020), identified 12 modifiable risk factors across the lifespan, including social isolation, accounting for an estimated 40% of dementia cases globally if addressed.",
     cite: "Livingston et al., The Lancet Commission, 2020"
+  },
+  {
+    tag: "treatment", tagLabel: "Treatment", status: "Phase 3 trials ongoing · 2025",
+    title: "Trontinemab clears amyloid in 92% of patients with far fewer side effects",
+    plain: "One of the biggest problems with existing amyloid-clearing drugs is a serious side effect called ARIA, which involves brain swelling or bleeding. Trontinemab, Roche's next-generation antibody, uses a technology called a 'brain shuttle' to cross the blood-brain barrier roughly 50 times more efficiently than conventional antibodies. In early trial data presented at the 2025 CTAD conference, <strong>92% of patients had no measurable amyloid plaques within 28 weeks</strong>, and the ARIA rate was under 5% — compared to 20–35% for existing approved drugs. Phase 3 trials (TRONTIER 1 and 2) began enrolling in late 2025.",
+    jargon: "Brainshuttle AD Phase 1b/2a trial, n=114. Trontinemab is coupled to a transferrin-receptor-binding fragment enabling active transcytosis across the blood-brain barrier. 91–92% of patients on the 3.6 mg/kg dose achieved amyloid-PET negativity below 24 centiloids at 28 weeks. ARIA-E rate under 5% versus 20–35% for lecanemab/donanemab. TRONTIER 1 and 2 Phase 3 trials began enrolling late 2025; PrevenTRON preclinical prevention trial also planned. Regulatory submission expected ~2028 if Phase 3 confirms.",
+    cite: "Roche CTAD 2025 data; Psychiatric Times, December 2025"
+  },
+  {
+    tag: "treatment", tagLabel: "Treatment", status: "Early research · 2025",
+    title: "An experimental drug may block Alzheimer's before memory loss even begins",
+    plain: "Most current Alzheimer's treatments target amyloid plaques that have already built up over years. A drug called <strong>NU-9</strong> works differently: it targets a toxic protein fragment called C99, which researchers believe triggers the very earliest stages of Alzheimer's pathology, potentially years before plaques form. Early findings suggest it may be possible to intervene at this upstream point — before the brain damage cascades.",
+    jargon: "NU-9 is a small-molecule inhibitor targeting the C99 fragment of amyloid precursor protein (APP), which accumulates in mitochondria-associated membranes prior to amyloid-beta production. Preclinical findings (December 2025) suggest C99 may represent an earlier pathological trigger than extracellular amyloid-beta plaques. Human trials have not yet begun.",
+    cite: "ScienceDaily, December 2025"
+  },
+  {
+    tag: "prevention", tagLabel: "Prevention", status: "Research finding · December 2025",
+    title: "Obesity accelerates Alzheimer's biomarkers much faster than previously understood",
+    plain: "Researchers measuring Alzheimer's-related proteins in blood found that people with obesity showed <strong>significantly faster rises in these warning markers</strong> than people of healthy weight, and the acceleration was more dramatic than prior studies suggested. This adds obesity to the list of modifiable risk factors that may directly speed up Alzheimer's pathology — not just correlate with it.",
+    jargon: "Blood-based biomarker study published December 2025 measuring p-tau, amyloid-beta 42/40 ratio, and GFAP across BMI categories in longitudinal cohorts. Findings showed obesity is associated with accelerated trajectory of Alzheimer's biomarker accumulation, independent of other vascular risk factors.",
+    cite: "ScienceDaily, December 2025"
+  },
+  {
+    tag: "prevention", tagLabel: "Prevention", status: "Research finding · January 2026",
+    title: "Disrupted sleep rhythms are strongly linked to dementia risk",
+    plain: "A study of older adults found that those with <strong>weaker, more irregular daily activity patterns</strong>, including disrupted sleep-wake cycles, were far more likely to develop dementia than those with consistent daily rhythms. This builds on growing evidence that circadian rhythm disruption is not just a symptom of Alzheimer's but may be an early warning sign — and potentially a modifiable risk factor.",
+    jargon: "Prospective cohort study published January 2026 using actigraphy-derived rest-activity rhythm metrics (interdaily stability, intradaily variability) in older adults. Participants with weaker circadian amplitude and greater fragmentation showed significantly elevated dementia incidence over follow-up. Mechanistically, sleep disruption is associated with impaired glymphatic amyloid clearance (Xie et al., Science 2013) and elevated p-tau and GFAP in plasma.",
+    cite: "ScienceDaily, January 2026; InSleep46 study, Alzheimer's & Dementia, 2025"
+  },
+  {
+    tag: "diagnostics", tagLabel: "Diagnostics", status: "Research finding · January 2026",
+    title: "Young blood may protect aging brains; older blood may accelerate decline",
+    plain: "In mouse experiments, researchers found that transfusing older blood into younger animals <strong>worsened memory performance and accelerated Alzheimer's-like brain changes</strong>, while younger blood offered measurable protection to older animals. The findings point toward age-related factors in the blood — not just the brain — as drivers of Alzheimer's pathology, and open a new direction for therapeutic research.",
+    jargon: "Heterochronic parabiosis and plasma transfer experiments published January 2026. Older plasma accelerated amyloid accumulation and cognitive decline in recipient animals; young plasma reduced neuroinflammatory markers and partially reversed memory deficits. Specific circulating factors (GDF11, CCL11) are under investigation. Human translation is very early-stage.",
+    cite: "ScienceDaily, January 2026"
+  },
+  {
+    tag: "treatment", tagLabel: "Treatment", status: "Pipeline · 2026",
+    title: "An oral Alzheimer's drug would be a major accessibility breakthrough",
+    plain: "Every approved Alzheimer's disease-modifying treatment currently requires IV infusions every few weeks at an infusion center, which is expensive, time-consuming, and inaccessible for many patients. Researchers and pharmaceutical companies are actively developing <strong>pill-based treatments</strong> that could be taken at home. Several candidates are in Phase 2/3 trials, and success here would transform who can actually access treatment.",
+    jargon: "Multiple oral small-molecule candidates are in Phase 2/3 development targeting amyloid production (BACE1 inhibitors, gamma-secretase modulators), tau aggregation, and neuroinflammation. Key challenge: earlier BACE1 inhibitors (verubecestat, atabecestat) failed due to worsening cognition; newer candidates use different mechanisms. BrightFocus Foundation, 2026 forecast.",
+    cite: "BrightFocus Foundation, March 2026"
+  },
+  {
+    tag: "genetics", tagLabel: "Genetics", status: "Preclinical · NIH funded",
+    title: "APOE gene therapy reduced amyloid buildup in animal models",
+    plain: "The APOE gene is the strongest known genetic risk factor for late-onset Alzheimer's. A variant called APOE ε4 significantly raises risk, while APOE ε2 appears protective. NIH-funded research now shows that delivering APOE ε2 via gene therapy to mice that carry the ε4 variant <strong>reduced amyloid deposits and improved markers of brain inflammation</strong>. Human trials have not started, but the approach is advancing toward them.",
+    jargon: "NIH-funded study using adeno-associated virus (AAV) vector to deliver APOE ε2 in APOE ε4 mouse models of AD. Outcomes: reduced amyloid-beta deposition on immunohistochemistry, improved neuroinflammation markers (GFAP, IBA1), and reduced neurodegeneration markers. Cited in 2025 NIH Alzheimer's Disease Research Progress Report (NIA).",
+    cite: "NIH/NIA 2025 Alzheimer's Research Progress Report"
+  },
+  {
+    tag: "diagnostics", tagLabel: "Diagnostics", status: "Active pipeline · 2026",
+    title: "The drug pipeline has never been broader: 138 drugs in 182 trials right now",
+    plain: "As of 2026, the Alzheimer's research pipeline is the largest it has ever been. <strong>138 drugs are being tested across 182 clinical trials</strong>, targeting 15 different disease processes — from amyloid and tau to brain inflammation, metabolism, gut-brain connections, and circadian rhythms. This matters because it means the field is no longer betting everything on a single target, which was the strategy that led to decades of failures.",
+    jargon: "Cummings et al., Alzheimer's & Dementia: Translational Research & Clinical Interventions, 2026 pipeline report. 73% of candidates are biological or small-molecule disease-modifying agents; 14% cognitive enhancers; 11% neuropsychiatric symptom treatments. 27% of trials now use biomarkers as primary outcome measures. Growth areas versus 2025: transmitter-based candidates (+8), multi-target agents (+6), inflammatory/immune modulators (+4).",
+    cite: "Cummings et al., Alzheimer's & Dementia: TRCI, May 2026"
   }
 ];
 
