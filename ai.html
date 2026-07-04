@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroNex — Ask the Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body class="chat-body">
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Neuro<span>Nex</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#stages">Stages</a></li>
+      <li><a href="index.html#signs">Warning Signs</a></li>
+      <li><a href="index.html#prevention">Brain Health</a></li>
+      <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="index.html#volunteer">Volunteer</a></li>
+      <li><a href="index.html#app">The App</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="ai.html">Ask AI</a></li>
+      <li><a href="research-database.html">Research Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#stages">Stages</a>
+    <a href="index.html#signs">Warning Signs</a>
+    <a href="index.html#prevention">Brain Health</a>
+    <a href="index.html#caregivers">Caregivers</a>
+    <a href="index.html#volunteer">Volunteer</a>
+    <a href="index.html#app">The App</a>
+    <a href="index.html#about">About</a>
+    <a href="advocacy.html">Advocacy</a>
+    <a href="ai.html">Ask AI</a>
+    <a href="research-database.html">Research Database</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="chat-page">
+  <div class="chat-head">
+    <div class="chat-head-top">
+      <div>
+        <div class="pulse-row"><div class="pulse-dot"></div>Powered by Claude AI</div>
+        <h1>Ask the <em>Research.</em></h1>
+        <p class="hero-sub">Ask anything about Alzheimer's disease — symptoms, treatments, caregiving, research, or policy — and get a plain-language answer grounded in real science.</p>
+      </div>
+      <div class="disclaimer-pill">Not medical advice</div>
+    </div>
+  </div>
+
+  <div class="suggestions" id="suggestionsArea">
+    <div class="sug-label">Try asking</div>
+    <div class="sug-chips">
+      <button class="chip" data-q="What is the difference between Alzheimer's and dementia?">What is the difference between Alzheimer's and dementia?</button>
+      <button class="chip" data-q="What do the new blood tests for Alzheimer's actually detect?">What do the new blood tests for Alzheimer's actually detect?</button>
+      <button class="chip" data-q="How does lecanemab (Leqembi) work and who qualifies?">How does lecanemab (Leqembi) work and who qualifies?</button>
+      <button class="chip" data-q="What lifestyle changes reduce Alzheimer's risk?">What lifestyle changes reduce Alzheimer's risk?</button>
+      <button class="chip" data-q="How do I talk to a parent who may have early Alzheimer's?">How do I talk to a parent who may have early Alzheimer's?</button>
+      <button class="chip" data-q="What is caregiver burnout and how do I prevent it?">What is caregiver burnout and how do I prevent it?</button>
+    </div>
+  </div>
+
+  <div class="chat-area" id="chatArea">
+    <div class="chat-empty" id="emptyState">
+      <div class="chat-empty-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p>Ask a question above or pick one of the prompts to get started.</p>
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <div class="chat-input-wrap">
+      <textarea id="userInput" placeholder="Ask anything about Alzheimer's..." rows="1"></textarea>
+      <button class="send-btn" id="sendBtn" aria-label="Send">
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <div class="input-note">Answers are grounded in peer-reviewed research and explained in plain language. This tool does not provide medical advice — always consult a physician for personal health decisions.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>NeuroNex · AI answers are for educational purposes only</div>
+    <div>Not a substitute for medical advice</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="ai.js"></script>
+
+</body>
+</html>
