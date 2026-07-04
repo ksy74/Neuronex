@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroNex — Research, Translated</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Neuro<span>Nex</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#stages">Stages</a></li>
+      <li><a href="index.html#signs">Warning Signs</a></li>
+      <li><a href="index.html#prevention">Brain Health</a></li>
+      <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="research-database.html">Research Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#stages">Stages</a>
+    <a href="index.html#signs">Warning Signs</a>
+    <a href="index.html#prevention">Brain Health</a>
+    <a href="index.html#caregivers">Caregivers</a>
+    <a href="research-database.html">Research Database</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Research, Translated</div>
+    <h1>The science of Alzheimer's, <em>in plain English.</em></h1>
+    <p class="hero-sub">Real findings from peer-reviewed trials and FDA decisions — rewritten so a family member, not just a scientist, can understand what's actually changed and what it might mean for them. Click "what the study actually measured" on any entry for the clinical detail underneath.</p>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Search by topic, drug name, or keyword…">
+      <div class="count" id="resultCount">12 entries</div>
+    </div>
+    <div class="filters" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="treatment">Treatment</button>
+      <button class="filter-btn" data-filter="diagnostics">Diagnostics</button>
+      <button class="filter-btn" data-filter="prevention">Prevention</button>
+      <button class="filter-btn" data-filter="genetics">Genetics</button>
+      <button class="filter-btn" data-filter="device">Devices</button>
+    </div>
+  </div>
+</div>
+
+<section class="db-section">
+  <div class="wrap">
+    <div class="grid" id="grid"></div>
+    <div class="empty-state" id="emptyState">No entries match your search. Try a different term or clear the filter.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>NeuroNex Research Database · plain-language summaries, not medical advice</div>
+    <div>Updated June 2026</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="database.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroNex — Understanding Alzheimer's</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Neuro<span>Nex</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#stages">Stages</a></li>
+      <li><a href="index.html#signs">Warning Signs</a></li>
+      <li><a href="index.html#prevention">Brain Health</a></li>
+      <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="research-database.html">Research Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#stages">Stages</a>
+    <a href="index.html#signs">Warning Signs</a>
+    <a href="index.html#prevention">Brain Health</a>
+    <a href="index.html#caregivers">Caregivers</a>
+    <a href="research-database.html">Research Database</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Alzheimer's Awareness · NeuroNex</div>
+    <h1>Memory fades.<br><span class="fade-word" id="fadeWord">Understanding doesn't have to.</span></h1>
+    <div class="hero-grid">
+      <p class="hero-sub">Alzheimer's disease changes how a family communicates, plans, and cares for one another. The more clearly we understand it, the longer we can protect what matters most: connection.</p>
+      <div class="stat-card">
+        <div class="stat-num" id="statNum">0</div>
+        <div class="stat-label">seconds between new Alzheimer's diagnoses in the U.S.</div>
+        <div class="stat-cite">Alzheimer's Association, 2024 Facts &amp; Figures Report</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="stages">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num">01 — Disease Course</div>
+        <h2>Three stages, one continuous thread</h2>
+      </div>
+      <p class="lede">Alzheimer's doesn't arrive all at once. It moves gradually along a continuum — recognizing where someone is helps families know what kind of support to offer next.</p>
+    </div>
+
+    <div class="timeline-wrap reveal">
+      <div class="stages">
+        <div class="stage-card">
+          <div class="stage-node"></div>
+          <div class="stage-tag">Early Stage</div>
+          <h3>Mild</h3>
+          <p>Misplacing items, trouble finding words, difficulty planning or organizing. Often mistaken for normal aging. Most people are still independent and aware something is changing.</p>
+        </div>
+        <div class="stage-card">
+          <div class="stage-node"></div>
+          <div class="stage-tag">Middle Stage</div>
+          <h3>Moderate</h3>
+          <p>The longest stage, often lasting years. Confusion about time and place, difficulty recognizing family, changes in mood or behavior, and need for daily care assistance increase.</p>
+        </div>
+        <div class="stage-card">
+          <div class="stage-node"></div>
+          <div class="stage-tag">Late Stage</div>
+          <h3>Severe</h3>
+          <p>Loss of ability to communicate verbally, full-time care needs, and physical decline. Emotional connection through touch, voice, and music often remains possible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signs">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num">02 — Early Detection</div>
+        <h2>Normal aging vs. warning signs</h2>
+      </div>
+      <p class="lede">Some forgetfulness is a normal part of getting older. Alzheimer's looks different — it disrupts daily life, not just the occasional memory slip.</p>
+    </div>
+
+    <div class="signs-grid reveal">
+      <div class="signs-col">
+        <h4>Typical age-related changes</h4>
+        <ul>
+          <li>Sometimes forgetting names, but recalling them later</li>
+          <li>Occasionally misplacing items, but retracing steps to find them</li>
+          <li>Needing help with new technology, not familiar routines</li>
+          <li>Making a wrong decision once in a while</li>
+        </ul>
+      </div>
+      <div class="signs-col warn">
+        <h4>Possible warning signs</h4>
+        <ul>
+          <li>Forgetting recently learned information, asking the same questions repeatedly</li>
+          <li>Losing track of dates, seasons, or how time is passing</li>
+          <li>Trouble completing familiar tasks, like managing a budget or following a recipe</li>
+          <li>Withdrawing from work, hobbies, or social activities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prevention">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num">03 — Risk &amp; Resilience</div>
+        <h2>What the research says about brain health</h2>
+      </div>
+      <p class="lede">No single habit prevents Alzheimer's, but a 2015 Finnish trial — FINGER — found that combining several lifestyle changes measurably slowed cognitive decline in at-risk adults.</p>
+    </div>
+
+    <div class="prevent-grid reveal">
+      <div class="pcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Move daily</h3>
+        <p>Regular aerobic exercise improves blood flow to the brain and was a core pillar of the FINGER protocol's combined intervention.</p>
+        <div class="cite">Ngandu et al., The Lancet, 2015</div>
+      </div>
+      <div class="pcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        <h3>Eat for vascular health</h3>
+        <p>Diets emphasizing vegetables, fish, and limited saturated fat — similar to Mediterranean patterns — were linked to slower cognitive decline.</p>
+        <div class="cite">Morris et al., Alzheimer's &amp; Dementia, 2015</div>
+      </div>
+      <div class="pcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 19h16M4 15h10M4 11h16M4 7h10" stroke-linecap="round"/></svg>
+        <h3>Keep the mind active</h3>
+        <p>Cognitive training — puzzles, learning new skills, structured mental exercises — was directly tested as one of FINGER's four intervention arms.</p>
+        <div class="cite">Ngandu et al., The Lancet, 2015</div>
+      </div>
+      <div class="pcard">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="M10.5 9.5l3 3"/></svg>
+        <h3>Stay socially connected</h3>
+        <p>Social isolation is independently associated with higher dementia risk; regular meaningful contact appears protective.</p>
+        <div class="cite">Livingston et al., The Lancet Commission, 2020</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="caregivers">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num">04 — For Families</div>
+        <h2>Caregivers carry this too</h2>
+      </div>
+      <p class="lede">Alzheimer's reshapes the caregiver's life as much as the patient's. Burnout, grief, and isolation are common — and treatable as part of the care plan, not an afterthought.</p>
+    </div>
+
+    <div class="care-strip reveal">
+      <div>
+        <h3>You don't have to carry this alone.</h3>
+        <p>NeuroNex connects caregivers with respite resources, peer support, and tools to track their own wellbeing alongside their loved one's care.</p>
+      </div>
+      <a href="contact.html" class="btn">Find caregiver support</a>
+    </div>
+  </div>
+</section>
+
+<section id="involved">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num">05 — Take Action</div>
+        <h2>Turn awareness into action</h2>
+      </div>
+      <p class="lede">Every contribution — time, dollars, or a shared story — helps a family navigating this disease feel less alone.</p>
+    </div>
+
+    <div class="involve-grid reveal">
+      <div class="involve-card">
+        <h3>Volunteer</h3>
+        <p>From companionship visits to technical work on NeuroNex itself, there's a role suited to your time and skills.</p>
+        <a href="contact.html" class="btn btn-outline">See opportunities</a>
+      </div>
+      <div class="involve-card">
+        <h3>Donate</h3>
+        <p>Funds support free access to the NeuroNex app for families who can't afford memory-care technology.</p>
+        <a href="contact.html" class="btn btn-outline">Give support</a>
+      </div>
+      <div class="involve-card">
+        <h3>Share your story</h3>
+        <p>Family stories help others recognize early signs sooner and feel less isolated in their own journey.</p>
+        <a href="contact.html#story" class="btn btn-outline">Submit a story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>NeuroNex Awareness · built by students, grounded in research</div>
+    <div>Educational content only — not a substitute for medical advice</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="awareness.js"></script>
+
+</body>
+</html>
