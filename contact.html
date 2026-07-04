@@ -19,6 +19,7 @@
       <li><a href="index.html#signs">Warning Signs</a></li>
       <li><a href="index.html#prevention">Brain Health</a></li>
       <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="index.html#volunteer">Volunteer</a></li>
       <li><a href="research-database.html">Research Database</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -31,6 +32,7 @@
     <a href="index.html#signs">Warning Signs</a>
     <a href="index.html#prevention">Brain Health</a>
     <a href="index.html#caregivers">Caregivers</a>
+    <a href="index.html#volunteer">Volunteer</a>
     <a href="research-database.html">Research Database</a>
     <a href="contact.html">Contact</a>
   </div>
@@ -71,6 +73,18 @@
             <input type="email" id="contact-email" name="email" required>
           </div>
           <div class="field">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject" required>
+              <option value="" disabled selected>How can we help?</option>
+              <option>Volunteer inquiry</option>
+              <option>Donation</option>
+              <option>App support</option>
+              <option>Research question</option>
+              <option>Media or press</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
             <label for="contact-message">Message</label>
             <textarea id="contact-message" name="message" required></textarea>
           </div>
@@ -101,12 +115,34 @@
             <input type="email" id="story-email" name="email">
           </div>
           <div class="field">
+            <label for="story-relationship">Your relationship to the patient</label>
+            <select id="story-relationship" name="relationship">
+              <option value="" disabled selected>Select one</option>
+              <option>Spouse or partner</option>
+              <option>Adult child</option>
+              <option>Sibling</option>
+              <option>Friend or neighbor</option>
+              <option>Professional caregiver</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="story-stage">Stage of disease (if known)</label>
+            <select id="story-stage" name="disease_stage">
+              <option value="" disabled selected>Select one</option>
+              <option>Early / Mild</option>
+              <option>Middle / Moderate</option>
+              <option>Late / Severe</option>
+              <option>Not sure / Prefer not to say</option>
+            </select>
+          </div>
+          <div class="field">
             <label for="story-text">Your story</label>
-            <textarea id="story-text" name="story" required placeholder="Share as much or as little as you'd like…"></textarea>
+            <textarea id="story-text" name="story" required placeholder="Share as much or as little as you'd like. There is no right way to tell this story."></textarea>
           </div>
           <div class="field field-checkbox">
             <input type="checkbox" id="story-permission" name="permission_to_feature" value="yes">
-            <label for="story-permission">You may feature my story publicly on NeuroNex (first name only).</label>
+            <label for="story-permission">I give NeuroNex permission to share my story (with my review before publication).</label>
           </div>
 
           <button type="submit" class="btn">Submit story</button>

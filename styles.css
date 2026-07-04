@@ -255,6 +255,28 @@ h2{
 .involve-card h3{ font-family:'Fraunces', Georgia, serif; font-weight:500; font-size:1.1rem; margin-bottom:8px; }
 .involve-card p{ font-size:0.88rem; color:var(--sand-dim); margin-bottom:18px; font-family:'Newsreader', serif; }
 
+/* ---------- VOLUNTEER ---------- */
+.volunteer-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+@media (max-width:780px){ .volunteer-grid{ grid-template-columns:1fr; } }
+.volunteer-col h3{ font-family:'Fraunces', Georgia, serif; font-weight:500; font-size:1.3rem; margin-bottom:20px; color:var(--sand); }
+.volunteer-col .volunteer-subhead{ margin-top:32px; }
+.volunteer-list{ list-style:none; }
+.volunteer-list li{
+  font-size:0.93rem; color:var(--sand-dim); font-family:'Newsreader', serif;
+  padding:12px 0; border-top:1px solid var(--line); display:flex; gap:10px; align-items:baseline;
+}
+.volunteer-list li:first-child{ border-top:none; }
+.volunteer-list li::before{ content:''; flex-shrink:0; width:4px; height:4px; border-radius:50%; background:var(--copper); margin-top:8px; }
+.volunteer-note{
+  margin-top:24px; padding:20px 22px; border-left:2px solid var(--copper-dim); background:var(--panel);
+  font-family:'Newsreader', serif; font-style:italic; color:var(--sand-dim); font-size:0.92rem; line-height:1.7;
+}
+.volunteer-cta{
+  margin-top:48px; padding-top:40px; border-top:1px solid var(--line);
+  display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;
+}
+.volunteer-cta p{ max-width:560px; color:var(--sand-dim); font-family:'Newsreader', serif; font-size:0.95rem; }
+
 /* ---------- RESEARCH DATABASE ---------- */
 .controls{ position:sticky; top:65px; z-index:40; background:var(--ink); padding:24px 0 18px; border-bottom:1px solid var(--line); }
 .search-row{ display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap; }
@@ -327,12 +349,14 @@ h2{
 }
 .field input[type="text"],
 .field input[type="email"],
+.field select,
 .field textarea{
   width:100%; background:var(--ink); border:1px solid var(--line); color:var(--sand);
   padding:12px 14px; border-radius:3px; font-size:0.95rem; font-family:'Newsreader', serif;
 }
+.field select{ cursor:pointer; }
 .field textarea{ resize:vertical; min-height:120px; }
-.field input:focus, .field textarea:focus{ outline:none; border-color:var(--copper-dim); }
+.field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--copper-dim); }
 .field-checkbox{ display:flex; align-items:flex-start; gap:10px; }
 .field-checkbox input{ margin-top:4px; }
 .field-checkbox label{ font-family:'Newsreader', serif; font-size:0.9rem; color:var(--sand-dim); text-transform:none; letter-spacing:normal; margin-bottom:0; }
