@@ -182,6 +182,11 @@ h2{
 }
 .lede{ max-width:620px; color:var(--sand-dim); font-size:1rem; font-family:'Newsreader', serif; }
 
+/* ---------- SUBSECTION (merged tabs) ---------- */
+.subsection + .subsection{ margin-top:56px; padding-top:56px; border-top:1px solid var(--line); }
+.subsection-head{ font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:1.3rem; color:var(--sand); margin-bottom:12px; }
+.subsection > .lede{ margin-bottom:28px; }
+
 /* ---------- TIMELINE ---------- */
 .timeline-wrap{ position:relative; padding-top:20px; }
 .stages{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; position:relative; z-index:1; }
