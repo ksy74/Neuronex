@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
   window.addEventListener('resize', () => {
-    if(window.innerWidth > 780) closeMenu();
+    if(window.innerWidth > 960) closeMenu();
   });
 });
