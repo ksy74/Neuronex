@@ -417,3 +417,79 @@ footer a:hover{ color:var(--copper); }
 
 .reveal{ opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.in{ opacity:1; transform:translateY(0); }
+
+/* ---------- ADVOCACY: HERO STATS ---------- */
+.hero-stats{ display:flex; gap:32px; margin-top:32px; flex-wrap:wrap; }
+.hero-stat-mini{ border-left:2px solid var(--line); padding-left:16px; }
+.hero-stat-mini .num{ font-family:'Fraunces', Georgia, serif; font-size:1.9rem; color:var(--sand); font-style:italic; line-height:1; }
+.hero-stat-mini .label{ font-family:'Space Mono', monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; color:#6E7F73; margin-top:6px; }
+
+/* ---------- ADVOCACY: BILL LIST ---------- */
+.bill-list{ display:flex; flex-direction:column; }
+.bill{ padding:36px 0 36px 32px; border-top:1px solid var(--line); position:relative; transition:padding-left .2s; }
+.bill:first-child{ border-top:none; }
+.bill::before{ content:''; position:absolute; left:0; top:44px; bottom:32px; width:2px; background:var(--line); transition:background .2s; }
+.bill:hover::before{ background:var(--copper); }
+.bill:hover{ padding-left:40px; }
+.bill-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:14px; flex-wrap:wrap; }
+.bill-tags{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.bill-id{ font-family:'Space Mono', monospace; font-size:0.7rem; color:#6E7F73; }
+.bill h3{ font-family:'Fraunces', Georgia, serif; font-size:1.4rem; font-weight:500; color:var(--sand); letter-spacing:-0.01em; line-height:1.2; margin-bottom:10px; max-width:680px; }
+.bill-plain{ font-family:'Newsreader', serif; font-size:0.97rem; font-weight:400; color:var(--sand-dim); line-height:1.78; max-width:700px; margin-bottom:16px; }
+.bill-plain strong{ color:var(--sand); font-weight:600; }
+
+.status-badge{ font-family:'Space Mono', monospace; font-size:0.64rem; text-transform:uppercase; letter-spacing:0.08em; padding:3px 8px; border-radius:2px; display:inline-block; }
+.status-badge.introduced{ background:rgba(127,166,140,0.15); color:var(--sage); }
+.status-badge.committee{ background:rgba(201,123,74,0.15); color:var(--copper); }
+.status-badge.passed{ background:rgba(127,166,140,0.25); color:#8FD4A8; }
+.status-badge.signed{ background:rgba(100,200,130,0.2); color:#6DC891; }
+.status-badge.stalled{ background:rgba(217,138,130,0.15); color:var(--rose); }
+
+.bill-progress{ max-width:580px; margin-bottom:18px; }
+.progress-steps{ display:flex; gap:0; position:relative; }
+.progress-steps::before{ content:''; position:absolute; top:5px; left:6px; right:6px; height:1px; background:var(--line); z-index:0; }
+.pstep{ display:flex; flex-direction:column; align-items:center; flex:1; position:relative; z-index:1; }
+.pstep-dot{ width:12px; height:12px; border-radius:50%; background:var(--line); border:1px solid var(--line); margin-bottom:6px; transition:background .3s; }
+.pstep-dot.done{ background:var(--copper); border-color:var(--copper); }
+.pstep-dot.current{ background:#C9A84C; border-color:#C9A84C; box-shadow:0 0 0 3px rgba(201,168,76,0.2); }
+.pstep-label{ font-family:'Space Mono', monospace; font-size:0.6rem; text-transform:uppercase; letter-spacing:0.06em; color:#6E7F73; text-align:center; line-height:1.3; }
+.pstep-label.done{ color:var(--copper); }
+.pstep-label.current{ color:#C9A84C; }
+
+.bill-bottom{ display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+.bill-meta{ font-family:'Space Mono', monospace; font-size:0.66rem; color:#6E7F73; }
+.bill-meta span{ color:var(--sand-dim); }
+.act-btn{
+  font-family:'Space Mono', monospace; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;
+  background:none; border:1px solid var(--line); border-radius:2px;
+  color:var(--copper); padding:8px 16px; cursor:pointer; transition:all .2s; text-decoration:none; display:inline-block;
+}
+.act-btn:hover{ border-color:var(--copper); background:rgba(201,123,74,0.08); }
+
+/* ---------- ADVOCACY: EMAIL TEMPLATE MODAL ---------- */
+.modal-overlay{
+  display:none; position:fixed; inset:0; z-index:200;
+  background:rgba(8,18,12,0.88); backdrop-filter:blur(4px);
+  align-items:center; justify-content:center; padding:20px;
+}
+.modal-overlay.open{ display:flex; }
+.modal{ background:var(--panel); border:1px solid var(--line); border-radius:6px; max-width:620px; width:100%; padding:40px; position:relative; max-height:90vh; overflow-y:auto; }
+.modal-close{ position:absolute; top:16px; right:20px; background:none; border:none; color:var(--sand-dim); font-size:1.4rem; cursor:pointer; line-height:1; }
+.modal-close:hover{ color:var(--sand); }
+.modal-label{ font-family:'Space Mono', monospace; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--copper); margin-bottom:10px; }
+.modal h3{ font-family:'Fraunces', Georgia, serif; font-size:1.5rem; font-weight:500; color:var(--sand); margin-bottom:16px; line-height:1.2; }
+.modal p{ font-size:0.92rem; color:var(--sand-dim); font-family:'Newsreader', serif; font-weight:400; line-height:1.75; margin-bottom:18px; }
+.template-box{
+  background:var(--ink); border:1px solid var(--line); border-radius:0 3px 3px 0; border-left:2px solid var(--copper);
+  padding:20px; margin-bottom:20px; font-size:0.85rem; color:var(--sand-dim); font-weight:400; line-height:1.75;
+  white-space:pre-wrap; font-family:'Space Mono', monospace;
+}
+.modal-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+.modal-note{ font-family:'Space Mono', monospace; font-size:0.65rem; color:#6E7F73; margin-top:14px; line-height:1.6; }
+.copy-confirm{ font-family:'Space Mono', monospace; font-size:0.7rem; color:var(--sage); display:none; margin-top:10px; }
+
+/* ---------- ADVOCACY: CTA BANNER ---------- */
+.cta-banner{ background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:40px 0; }
+.cta-inner{ display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; }
+.cta-text h3{ font-family:'Fraunces', Georgia, serif; font-size:1.4rem; font-weight:500; color:var(--sand); margin-bottom:6px; }
+.cta-text p{ font-size:0.9rem; color:var(--sand-dim); font-family:'Newsreader', serif; }

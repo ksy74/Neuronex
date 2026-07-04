@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroNex — Legislative Advocacy Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Neuro<span>Nex</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#stages">Stages</a></li>
+      <li><a href="index.html#signs">Warning Signs</a></li>
+      <li><a href="index.html#prevention">Brain Health</a></li>
+      <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="index.html#volunteer">Volunteer</a></li>
+      <li><a href="index.html#app">The App</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="research-database.html">Research Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#stages">Stages</a>
+    <a href="index.html#signs">Warning Signs</a>
+    <a href="index.html#prevention">Brain Health</a>
+    <a href="index.html#caregivers">Caregivers</a>
+    <a href="index.html#volunteer">Volunteer</a>
+    <a href="index.html#app">The App</a>
+    <a href="index.html#about">About</a>
+    <a href="advocacy.html">Advocacy</a>
+    <a href="research-database.html">Research Database</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Legislative Advocacy Tracker</div>
+    <h1>Real bills, <em>real impact on real families.</em></h1>
+    <p class="hero-sub">Alzheimer's policy is being written right now in Congress. This tracker follows every major bill affecting patients, caregivers, and research funding — in plain language, with tools to make your voice heard.</p>
+    <div class="hero-stats">
+      <div class="hero-stat-mini">
+        <div class="num" id="billCount">5</div>
+        <div class="label">Active bills tracked</div>
+      </div>
+      <div class="hero-stat-mini">
+        <div class="num">119th</div>
+        <div class="label">Congress session</div>
+      </div>
+      <div class="hero-stat-mini">
+        <div class="num">$3.9B</div>
+        <div class="label">FY2026 NIH dementia funding</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Search bills by name, topic, or keyword…">
+      <div class="count" id="resultCount">5 bills</div>
+    </div>
+    <div class="filters" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All Bills</button>
+      <button class="filter-btn" data-filter="screening">Screening</button>
+      <button class="filter-btn" data-filter="funding">Research Funding</button>
+      <button class="filter-btn" data-filter="care">Care Access</button>
+      <button class="filter-btn" data-filter="global">Global</button>
+    </div>
+  </div>
+</div>
+
+<section class="db-section">
+  <div class="wrap">
+    <div class="bill-list" id="billList"></div>
+    <div class="empty-state" id="emptyState">No bills match your search. Try a different term or clear the filter.</div>
+  </div>
+</section>
+
+<div class="cta-banner" id="contact-reps">
+  <div class="wrap cta-inner">
+    <div class="cta-text">
+      <h3>Your representatives need to hear from you.</h3>
+      <p>Click "Contact my representative" on any bill above to get a pre-written, editable template you can send today.</p>
+    </div>
+    <a href="https://www.congress.gov/members/find-your-member" target="_blank" class="btn">Find my representatives</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>NeuroNex Advocacy · bill data sourced from Congress.gov and the Alzheimer's Association</div>
+    <div>Updated July 2026</div>
+  </div>
+</footer>
+
+<!-- EMAIL TEMPLATE MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-label">Advocacy Template</div>
+    <h3 id="modalTitle"></h3>
+    <p>Copy the template below, paste it into an email or your representative's contact form, and personalize it with your name and any personal connection to Alzheimer's disease.</p>
+    <div class="template-box" id="modalTemplate"></div>
+    <div class="modal-actions">
+      <button class="btn" id="copyBtn">Copy template</button>
+      <a href="https://www.congress.gov/members/find-your-member" target="_blank" class="act-btn">Find my rep</a>
+    </div>
+    <div class="copy-confirm" id="copyConfirm">Copied to clipboard.</div>
+    <div class="modal-note">Tip: personalizing the template with your own story makes letters significantly more effective. Representatives' offices track constituent contact volume on individual bills.</div>
+  </div>
+</div>
+
+<script src="nav.js"></script>
+<script src="advocacy.js"></script>
+
+</body>
+</html>
