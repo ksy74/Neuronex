@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroNex — CAIDE Dementia Risk Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Neuro<span>Nex</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#stages">Stages</a></li>
+      <li><a href="index.html#signs">Signs &amp; Prevention</a></li>
+      <li><a href="index.html#caregivers">Caregivers</a></li>
+      <li><a href="index.html#volunteer">Volunteer</a></li>
+      <li><a href="index.html#app">The App</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="ai.html">Ask AI</a></li>
+      <li><a href="risk-explorer.html">Risk Score</a></li>
+      <li><a href="research-database.html">Research Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#stages">Stages</a>
+    <a href="index.html#signs">Signs &amp; Prevention</a>
+    <a href="index.html#caregivers">Caregivers</a>
+    <a href="index.html#volunteer">Volunteer</a>
+    <a href="index.html#app">The App</a>
+    <a href="index.html#about">About</a>
+    <a href="advocacy.html">Advocacy</a>
+    <a href="ai.html">Ask AI</a>
+    <a href="risk-explorer.html">Risk Score</a>
+    <a href="research-database.html">Research Database</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Validated Instrument · Kivipelto et al., 2006, Lancet Neurology</div>
+    <h1>CAIDE dementia <em>risk explorer.</em></h1>
+    <p class="hero-sub">The CAIDE score is a published, externally validated tool for estimating 20-year dementia risk from midlife cardiovascular and lifestyle factors. Adjust the fields below to see how each factor contributes to the total score.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="risk-grid">
+      <div class="risk-panel">
+        <p class="risk-group-label">Demographics</p>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Age</span><span class="risk-field-pts" id="pts-age">0 pts</span></div>
+          <input type="range" class="risk-slider" id="slider-age" min="30" max="80" step="1" value="45">
+          <div class="risk-range-labels"><span>30</span><span id="val-age">45 years</span><span>80</span></div>
+        </div>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Sex</span><span class="risk-field-pts" id="pts-sex">0 pts</span></div>
+          <div class="risk-seg" id="seg-sex">
+            <button data-val="female" class="active">Female</button>
+            <button data-val="male">Male</button>
+          </div>
+        </div>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Education</span><span class="risk-field-pts" id="pts-edu">0 pts</span></div>
+          <div class="risk-seg" id="seg-edu">
+            <button data-val="high" class="active">10+ years</button>
+            <button data-val="mid">7&ndash;9 years</button>
+            <button data-val="low">0&ndash;6 years</button>
+          </div>
+        </div>
+
+        <p class="risk-group-label">Cardiovascular &amp; metabolic</p>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Systolic blood pressure</span><span class="risk-field-pts" id="pts-sbp">0 pts</span></div>
+          <div class="risk-num-unit">
+            <input type="number" id="input-sbp" value="120" min="70" max="240">
+            <span class="risk-unit-toggle">mmHg</span>
+          </div>
+        </div>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Body mass index (BMI)</span><span class="risk-field-pts" id="pts-bmi">0 pts</span></div>
+          <div class="risk-num-unit">
+            <input type="number" id="input-bmi" value="24" min="12" max="55" step="0.1">
+            <span class="risk-unit-toggle">kg/m&sup2;</span>
+          </div>
+        </div>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Total cholesterol</span><span class="risk-field-pts" id="pts-chol">0 pts</span></div>
+          <div class="risk-num-unit">
+            <input type="number" id="input-chol" value="200" min="80" max="500" step="1">
+            <button class="risk-unit-toggle" id="chol-unit-btn">mg/dL</button>
+          </div>
+        </div>
+
+        <p class="risk-group-label">Lifestyle</p>
+        <div class="risk-field">
+          <div class="risk-field-top"><span class="risk-field-name">Physical activity</span><span class="risk-field-pts" id="pts-act">0 pts</span></div>
+          <div class="risk-seg" id="seg-act">
+            <button data-val="active" class="active">Active (&ge;2x/week)</button>
+            <button data-val="inactive">Inactive</button>
+          </div>
+        </div>
+
+        <details class="risk-advanced">
+          <summary>Optional: APOE &epsilon;4 genotype (extended score)</summary>
+          <div class="risk-field" style="margin-top:14px;">
+            <div class="risk-field-top"><span class="risk-field-name">APOE &epsilon;4 carrier status</span><span class="risk-field-pts" id="pts-apoe">0 pts</span></div>
+            <div class="risk-seg" id="seg-apoe">
+              <button data-val="unknown" class="active">Unknown / not tested</button>
+              <button data-val="no">Non-carrier</button>
+              <button data-val="yes">Carrier</button>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="risk-panel risk-score-wrap">
+        <div><span class="risk-score-num" id="score-num">0</span><span class="risk-score-max" id="score-max">&nbsp;/ 15</span></div>
+        <p class="risk-score-caption">total CAIDE score</p>
+
+        <div class="risk-scale-track">
+          <div class="risk-scale-marker" id="scale-marker" style="left:0%;"></div>
+        </div>
+        <div class="risk-scale-labels"><span>0</span><span>5</span><span>7</span><span>9</span><span>11</span><span>15</span></div>
+
+        <div class="risk-badge" id="risk-badge">low estimated risk</div>
+        <p id="apoe-caveat" style="display:none; font-size:0.72rem; color:var(--sand-dim); margin:-14px 0 18px; text-align:left; font-family:'Newsreader',serif;">Note: the published risk percentages below were validated for the base 0&ndash;15 score. With the APOE extension included, the total score is no longer directly on that same scale &mdash; treat the percentage as approximate.</p>
+
+        <table class="risk-table">
+          <tr><th>Score</th><th>0&ndash;5</th><th>6&ndash;7</th><th>8&ndash;9</th><th>10&ndash;11</th><th>12&ndash;15</th></tr>
+          <tr><th>20-yr risk</th><td>1.0%</td><td>1.9%</td><td>4.2%</td><td>7.4%</td><td>16.4%</td></tr>
+        </table>
+
+        <p class="risk-contrib-title">Point breakdown</p>
+        <div id="contributions"></div>
+      </div>
+    </div>
+
+    <p class="risk-footnote">
+      <b>What this is.</b> The CAIDE (Cardiovascular Risk Factors, Aging and Dementia) score is a published, peer-reviewed risk instrument developed from a 20-year longitudinal Finnish cohort study and externally replicated in several other populations. It was designed to estimate dementia risk from factors measured in <b>midlife (roughly ages 40&ndash;65)</b>; its accuracy outside that age range, or in populations very different from the original cohort, has not been established to the same degree. The APOE &epsilon;4 extension uses point weights reported in a later replication study and is optional, since genotype is often unknown.<br><br>
+      <b>This is an educational tool, not a diagnostic or clinical instrument.</b> It does not diagnose dementia or Alzheimer's disease, cannot account for your full individual medical history, and should never replace a conversation with a physician. If you have concerns about memory or cognitive health, please speak with a doctor.<br><br>
+      <b>Source:</b> Kivipelto M, Ngandu T, Laatikainen T, Winblad B, Soininen H, Tuomilehto J. Risk score for the prediction of dementia risk in 20 years among middle aged people: a longitudinal, population-based study. <i>Lancet Neurology</i>. 2006;5(9):735&ndash;741.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>NeuroNex · educational tool, not a diagnostic instrument</div>
+    <div>Always consult a physician about memory or cognitive concerns</div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="risk-explorer.js"></script>
+
+</body>
+</html>

@@ -581,3 +581,59 @@ textarea#userInput:focus{ border-color:var(--copper-dim); }
 .input-note{ font-family:'Space Mono', monospace; font-size:0.63rem; color:#6E7F73; margin-top:10px; line-height:1.5; }
 
 .error-msg{ padding:12px 16px; border-left:2px solid var(--rose); background:rgba(217,138,130,0.08); font-size:0.88rem; color:var(--rose); font-family:'Newsreader', serif; }
+
+/* ---------- CAIDE RISK EXPLORER ---------- */
+.risk-grid{ display:grid; grid-template-columns:1.15fr 1fr; gap:20px; align-items:start; margin-bottom:40px; }
+@media (max-width:780px){ .risk-grid{ grid-template-columns:1fr; } }
+.risk-panel{ background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:28px 30px; }
+.risk-group-label{ font-family:'Space Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:#6E7F73; margin:0 0 16px; padding-top:22px; border-top:1px solid var(--line); }
+.risk-group-label:first-child{ padding-top:0; border-top:none; }
+.risk-field{ margin-bottom:18px; }
+.risk-field-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.risk-field-name{ font-family:'Newsreader', serif; font-size:0.92rem; color:var(--sand); }
+.risk-field-pts{ font-family:'Space Mono', monospace; font-size:0.75rem; color:var(--copper); font-weight:700; }
+
+.risk-slider{ width:100%; -webkit-appearance:none; appearance:none; height:4px; border-radius:2px; background:var(--line); outline:none; }
+.risk-slider::-webkit-slider-thumb{ -webkit-appearance:none; width:16px; height:16px; border-radius:50%; background:var(--copper); cursor:pointer; border:2px solid var(--ink); box-shadow:0 0 0 1px var(--copper); }
+.risk-slider::-moz-range-thumb{ width:16px; height:16px; border-radius:50%; background:var(--copper); cursor:pointer; border:2px solid var(--ink); box-shadow:0 0 0 1px var(--copper); }
+.risk-range-labels{ display:flex; justify-content:space-between; font-family:'Space Mono', monospace; font-size:0.65rem; color:#6E7F73; margin-top:4px; }
+
+.risk-seg{ display:flex; border:1px solid var(--line); border-radius:4px; overflow:hidden; }
+.risk-seg button{ flex:1; border:none; background:var(--panel); color:var(--sand-dim); font-family:'Newsreader', serif; font-size:0.85rem; padding:9px 6px; cursor:pointer; border-right:1px solid var(--line); transition:all .15s; }
+.risk-seg button:last-child{ border-right:none; }
+.risk-seg button.active{ background:var(--copper); color:var(--ink); font-weight:600; }
+
+.risk-num-unit{ display:flex; gap:8px; align-items:center; }
+.risk-num-unit input[type="number"]{ flex:1; font-family:'Space Mono', monospace; font-size:0.9rem; padding:9px 12px; border:1px solid var(--line); border-radius:3px; background:var(--ink); color:var(--sand); width:100%; }
+.risk-unit-toggle{ font-family:'Space Mono', monospace; font-size:0.68rem; color:var(--sand-dim); background:none; border:1px solid var(--line); border-radius:3px; padding:7px 9px; cursor:pointer; white-space:nowrap; }
+
+.risk-advanced{ margin-top:20px; border-top:1px solid var(--line); padding-top:16px; }
+.risk-advanced summary{ font-family:'Space Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--copper); cursor:pointer; }
+
+.risk-score-wrap{ text-align:center; }
+.risk-score-num{ font-family:'Space Mono', monospace; font-size:3.2rem; font-weight:700; margin:6px 0 0; line-height:1; color:var(--sand); }
+.risk-score-max{ font-family:'Space Mono', monospace; font-size:1rem; color:#6E7F73; }
+.risk-score-caption{ font-size:0.78rem; color:var(--sand-dim); margin:6px 0 18px; font-family:'Newsreader', serif; }
+
+.risk-badge{ display:inline-block; font-family:'Space Mono', monospace; font-size:0.8rem; padding:8px 16px; border-radius:20px; font-weight:600; margin-bottom:22px; }
+
+.risk-scale-track{
+  position:relative; height:14px; border-radius:7px; margin:0 4px 8px;
+  background:linear-gradient(to right, #7FA68C 0%, #7FA68C 33%, #C9A84C 33%, #C9A84C 53%, #C97B4A 53%, #C97B4A 66%, #C1502F 66%, #C1502F 80%, #A13F2E 80%, #A13F2E 100%);
+}
+.risk-scale-marker{ position:absolute; top:-5px; width:3px; height:24px; background:var(--sand); border-radius:2px; transform:translateX(-50%); }
+.risk-scale-labels{ display:flex; justify-content:space-between; font-family:'Space Mono', monospace; font-size:0.62rem; color:#6E7F73; padding:0 4px; }
+
+.risk-contrib-title{ font-family:'Space Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; color:#6E7F73; text-align:left; margin:24px 0 12px; border-top:1px solid var(--line); padding-top:18px; }
+.risk-contrib-row{ display:grid; grid-template-columns:100px 1fr 32px; align-items:center; gap:8px; margin-bottom:8px; }
+.risk-contrib-name{ font-family:'Space Mono', monospace; font-size:0.68rem; color:var(--sand-dim); text-align:right; }
+.risk-contrib-bar-track{ position:relative; height:8px; background:var(--line); border-radius:4px; }
+.risk-contrib-bar-fill{ position:absolute; top:0; bottom:0; left:0; border-radius:4px; background:var(--copper); }
+.risk-contrib-pts{ font-family:'Space Mono', monospace; font-size:0.68rem; color:var(--sand); }
+
+.risk-footnote{ font-size:0.9rem; color:var(--sand-dim); line-height:1.75; margin-top:10px; font-family:'Newsreader', serif; }
+.risk-footnote b{ color:var(--sand); font-weight:700; }
+.risk-table{ width:100%; border-collapse:collapse; margin:16px 0; font-size:0.78rem; }
+.risk-table th, .risk-table td{ padding:8px; text-align:center; border:1px solid var(--line); font-family:'Space Mono', monospace; }
+.risk-table th{ background:var(--panel-2); font-weight:600; color:var(--sand); }
+.risk-table td{ color:var(--sand-dim); }
