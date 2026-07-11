@@ -45,13 +45,13 @@ function riskBand(score) {
   return { pct: '16.4%', label: 'high estimated risk', cls: 'high' };
 }
 
-// [background, foreground] pairs tuned for the site's dark theme.
+// [background, foreground] pairs tuned for the site's light theme.
 const bandColors = {
-  low: ['rgba(127,166,140,0.15)', '#7FA68C'],
-  lowmod: ['rgba(201,168,76,0.15)', '#C9A84C'],
-  mod: ['rgba(201,168,76,0.2)', '#C9A84C'],
-  elev: ['rgba(201,123,74,0.2)', '#C97B4A'],
-  high: ['rgba(196,80,58,0.2)', '#C1502F']
+  low: ['rgba(75,102,80,0.14)', '#3F5A44'],
+  lowmod: ['rgba(184,145,46,0.16)', '#8A6F1F'],
+  mod: ['rgba(184,145,46,0.2)', '#8A6F1F'],
+  elev: ['rgba(168,92,50,0.18)', '#95502B'],
+  high: ['rgba(122,46,30,0.18)', '#7A2E1E']
 };
 
 function setupSeg(id, key, onchange) {
