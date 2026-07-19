@@ -138,6 +138,27 @@ const entries = [
     plain: "As of 2026, the Alzheimer's research pipeline is the largest it has ever been. <strong>138 drugs are being tested across 182 clinical trials</strong>, targeting 15 different disease processes — from amyloid and tau to brain inflammation, metabolism, gut-brain connections, and circadian rhythms. This matters because it means the field is no longer betting everything on a single target, which was the strategy that led to decades of failures.",
     jargon: "Cummings et al., Alzheimer's & Dementia: Translational Research & Clinical Interventions, 2026 pipeline report. 73% of candidates are biological or small-molecule disease-modifying agents; 14% cognitive enhancers; 11% neuropsychiatric symptom treatments. 27% of trials now use biomarkers as primary outcome measures. Growth areas versus 2025: transmitter-based candidates (+8), multi-target agents (+6), inflammatory/immune modulators (+4).",
     cite: "Cummings et al., Alzheimer's & Dementia: TRCI, May 2026"
+  },
+  {
+    tag: "treatment", tagLabel: "Treatment", status: "Early research · June 2026",
+    title: "Scientists may have found how Alzheimer's tau protein spreads between brain cells",
+    plain: "Researchers found that Arc, a protein brain cells normally use to communicate with each other, also gets hijacked by toxic tau protein to move from a diseased neuron into healthy ones nearby. Tau attaches itself to Arc inside the same tiny transport packets the cell already uses for messaging, essentially hitching a ride to spread the damage. <strong>Blocking that transport step</strong> before it reaches healthy neurons could be a new way to slow the disease, though this is still lab-stage work in cells and animal models.",
+    jargon: "Published in Cell, June 30, 2026 (University of Utah Health). Arc packages toxic tau into extracellular vesicles that are released from diseased neurons and taken up by neighboring healthy cells, propagating tau pathology through the brain's existing intercellular communication machinery. Builds on Arc's known role in synaptic plasticity via a retrovirus-like capsid structure. Blocking vesicle release or uptake is proposed as a potential intervention point; not yet tested as a therapy in humans.",
+    cite: "University of Utah Health, Cell, June 2026"
+  },
+  {
+    tag: "treatment", tagLabel: "Treatment", status: "Early research · 2025",
+    title: "A newly found 'death switch' inside brain cells may explain how Alzheimer's kills neurons",
+    plain: "Researchers identified a toxic partnership between two proteins on the surface of brain cells that, once triggered, sets off a chain reaction that kills the cell. In mouse studies, an experimental compound that breaks up this partnership <strong>slowed disease progression and preserved memory</strong>, suggesting a way to protect neurons directly instead of only targeting amyloid plaques.",
+    jargon: "Published in Molecular Psychiatry, 2025 (Heidelberg University with Shandong University). NMDA receptors and TRPM4 ion channels form a toxic 'death complex' that drives excitotoxic neuronal death in Alzheimer's models. The compound FP802 disrupted this NMDAR–TRPM4 interaction, slowing disease progression and preserving memory in mouse models. A downstream, non-amyloid therapeutic target; human trials have not begun.",
+    cite: "Heidelberg University / Shandong University, Molecular Psychiatry, 2025"
+  },
+  {
+    tag: "diagnostics", tagLabel: "Diagnostics", status: "Real-world study · July 2026",
+    title: "A blood test brought primary care doctors' diagnostic accuracy close to specialists'",
+    plain: "In a real-world study of more than 1,300 patients and 165 physicians, giving primary care doctors the results of a blood-based Alzheimer's test raised their diagnostic accuracy from 65% to 93%, nearly matching specialists, whose accuracy rose from 74% to 89% with the same test. Results changed the diagnosis or care plan for <strong>more than half of all patients</strong> involved, suggesting a blood draw at a regular checkup could catch Alzheimer's earlier without a specialist referral.",
+    jargon: "Presented at the Alzheimer's Association International Conference (AAIC) 2026, London, July 2026. Real-world, multi-site study measuring plasma amyloid-beta and phosphorylated tau (p-tau) in patients undergoing cognitive evaluation. Primary care physician diagnostic accuracy rose from 65% pre-test to 93% post-test; specialist accuracy rose from 74% to 89%. Test results altered diagnosis or management plan in over 50% of cases across both settings.",
+    cite: "Alzheimer's Association International Conference (AAIC), July 2026"
   }
 ];
 

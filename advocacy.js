@@ -123,6 +123,58 @@ I urge your co-sponsorship and support for this legislation.
 Sincerely,
 [Your Name]
 [Your City, State]`
+  },
+  {
+    id: 'H.R.2036 / S.925',
+    filter: 'care',
+    status: 'introduced',
+    statusLabel: 'Introduced',
+    stepIndex: 0,
+    title: "Credit for Caring Act of 2025",
+    plain: "Family caregivers routinely spend thousands of dollars a year out of pocket on home care aides, adult day services, home modifications, and respite care, often while working full-time jobs. Alzheimer's caregivers carry an especially heavy share of this burden since dementia care typically stretches on for years, not months. <strong>The Credit for Caring Act would create a federal tax credit</strong> worth up to $5,000 for eligible working caregivers to help offset those costs.",
+    sponsors: 'Rep. Sánchez (D-CA), Rep. Carey (R-OH), Sen. Bennet (D-CO), Sen. Capito (R-WV)',
+    updated: 'March 2025',
+    link: 'https://www.congress.gov/bill/119th-congress/house-bill/2036',
+    template: `Dear [Representative's Name],
+
+I am writing to urge your support for the Credit for Caring Act (H.R.2036 / S.925), which would create a federal tax credit for family caregivers.
+
+Family caregivers, including many caring for someone with Alzheimer's, spend thousands of dollars a year out of pocket on home care aides, adult day services, home modifications, and respite care, often while working full-time jobs. The Credit for Caring Act would let eligible working caregivers claim up to $5,000 a year to offset expenses like these.
+
+Through my work with NeuroNex, I regularly hear from caregivers who are financially and emotionally stretched thin. A tax credit will not solve caregiving on its own, but it would ease a real cost that too many families carry quietly.
+
+I urge you to co-sponsor and support this bipartisan legislation.
+
+Sincerely,
+[Your Name]
+[Your City, State]`
+  },
+  {
+    id: 'H.R.6799',
+    filter: 'care',
+    status: 'introduced',
+    statusLabel: 'Introduced',
+    stepIndex: 0,
+    title: "BRIDGE for Young-Onset Alzheimer's Disease Act of 2025",
+    plain: "About 200,000 Americans are living with young-onset Alzheimer's, diagnosed before age 65, often while still raising kids or in the middle of a career. Under current law, someone diagnosed with young-onset Alzheimer's must wait five months for Social Security disability benefits and another 24 months for Medicare to start, a gap of more than two years with no income and no health coverage at the moment they need both most. <strong>The BRIDGE Act would eliminate both waiting periods</strong> for this population.",
+    sponsors: 'Rep. Young Kim (R-CA), Rep. Goldman (D-NY), Rep. Bacon (R-NE), Rep. Foushee (D-NC)',
+    updated: 'December 2025',
+    link: 'https://www.congress.gov/bill/119th-congress/house-bill/6799',
+    template: `Dear [Representative's Name],
+
+I am writing to urge your support for the BRIDGE for Young-Onset Alzheimer's Disease Act (H.R.6799).
+
+Roughly 200,000 Americans are living with young-onset Alzheimer's, diagnosed before age 65, often while still raising children or in the middle of their careers. Under current law, someone diagnosed with young-onset Alzheimer's must wait five months for Social Security disability benefits and another 24 months for Medicare coverage to begin, a gap of more than two years with no income and no health coverage during the period they need both most.
+
+The BRIDGE Act would eliminate both waiting periods for this population, so families facing an early Alzheimer's diagnosis are not also forced to fight for basic financial and medical support.
+
+Through my work with NeuroNex, I have talked with younger families blindsided by this diagnosis. Closing this gap is a straightforward fix with an outsized impact on the families it reaches.
+
+I urge your co-sponsorship of this bipartisan legislation.
+
+Sincerely,
+[Your Name]
+[Your City, State]`
   }
 ];
 
