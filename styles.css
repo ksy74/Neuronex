@@ -46,26 +46,36 @@ nav .wrap{
 }
 .brand{
   font-family:'Newsreader', Georgia, 'Iowan Old Style', serif;
-  font-weight:600;
-  font-size:1.2rem;
+  font-weight:400;
+  font-size:1.53rem;
   letter-spacing:-0.01em;
   color:var(--sand);
+  display:inline-flex;
+  align-items:baseline;
+  gap:9px;
   text-decoration:none;
 }
 .brand span{ color:var(--copper); font-style:italic; }
+.brand::after{ content:''; width:6px; height:6px; border-radius:50%; background:var(--copper); display:inline-block; flex-shrink:0; }
 
-.nav-links{ display:flex; align-items:center; gap:18px; list-style:none; flex-wrap:nowrap; }
+.nav-links{ display:flex; align-items:center; gap:14px; list-style:none; flex-wrap:wrap; }
 .nav-links a{
   color:var(--sand-dim);
   text-decoration:none;
-  font-family:'IBM Plex Mono', 'SF Mono', Consolas, monospace;
-  font-size:0.7rem;
-  text-transform:uppercase;
-  letter-spacing:0.04em;
+  font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:clamp(12.5px, 1.05vw, 13.5px);
+  font-weight:500;
   white-space:nowrap;
   transition:color .2s;
 }
 .nav-links a:hover{ color:var(--copper); }
+.nav-divider{ width:1px; height:16px; background:var(--line); margin:0 2px; }
+.nav-cta{
+  display:inline-flex; align-items:center; height:34px; padding:0 16px;
+  border-radius:999px; background:var(--sand); color:var(--ink); font-weight:500;
+  transition:background .2s;
+}
+.nav-cta:hover{ background:var(--copper); color:var(--ink); }
 
 .hamburger{
   display:none;
@@ -100,10 +110,9 @@ nav .wrap{
 .mobile-menu a{
   color:var(--sand-dim);
   text-decoration:none;
-  font-family:'IBM Plex Mono', 'SF Mono', Consolas, monospace;
-  font-size:0.82rem;
-  text-transform:uppercase;
-  letter-spacing:0.05em;
+  font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:0.95rem;
+  font-weight:500;
   padding:16px 28px;
   border-top:1px solid var(--line);
 }
@@ -130,12 +139,12 @@ header.hero{
 }
 h1{
   font-family:'Newsreader', Georgia, 'Iowan Old Style', serif;
-  font-weight:500;
+  font-weight:400;
   font-optical-sizing:auto;
-  font-size:clamp(2.3rem, 4.8vw, 3.9rem);
-  line-height:1.08;
-  letter-spacing:-0.015em;
-  max-width:780px;
+  font-size:clamp(3rem, 6.4vw, 5.4rem);
+  line-height:0.98;
+  letter-spacing:-0.022em;
+  max-width:880px;
   color:var(--sand);
 }
 h1 em{ font-style:italic; color:var(--copper); font-weight:400; }
